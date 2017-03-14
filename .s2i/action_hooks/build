@@ -22,7 +22,7 @@ pwd
 
 # Run the application specific build actions for this project.
 
-python manage.py collectstatic
+python manage.py collectstatic --noinput
 
 # Dump out the contents of the current working directory.
 
