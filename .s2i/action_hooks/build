@@ -22,6 +22,8 @@ pwd
 
 # Run the application specific build actions for this project.
 
+echo " -----> Running application specific build steps."
+
 python manage.py collectstatic --noinput
 
 # Dump out the contents of the current working directory.
