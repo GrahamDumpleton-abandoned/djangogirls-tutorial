@@ -1,41 +1,5 @@
-*.py[cod]
-
-# C extensions
-*.so
-
-# Packages
-*.egg
-*.egg-info
-dist
-build
-eggs
-parts
-sdist
-develop-eggs
-.installed.cfg
-
-man
-include
-.Python
-MANIFEST
-
-# Installer logs
-pip-log.txt
-
-# Unit test
-.cache
-.tox
-nosetests.xml
-
-# Translations
-*.mo
-
-# Mr Developer
-.mr.developer.cfg
-.project
-.pydevproject
-
-# Editor save files.
 .*.swp
+
+*.py[cod]
 
 db.sqlite3
