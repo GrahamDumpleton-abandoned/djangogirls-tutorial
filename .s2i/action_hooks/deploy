@@ -20,9 +20,9 @@ echo " -----> Current working directory."
 
 pwd
 
-# Run the application specific deploy actions for this project.
+# Run the application specific deploy steps for this project.
 
-echo " -----> Running application specific deploy steps."
+echo " -----> Running database table migrations."
 
 python manage.py migrate --noinput
 

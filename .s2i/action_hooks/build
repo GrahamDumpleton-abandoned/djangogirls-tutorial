@@ -20,9 +20,9 @@ echo " -----> Current working directory."
 
 pwd
 
-# Run the application specific build actions for this project.
+# Run the application specific build steps for this project.
 
-echo " -----> Running application specific build steps."
+echo " -----> Running collection of static resources."
 
 python manage.py collectstatic --noinput
 
