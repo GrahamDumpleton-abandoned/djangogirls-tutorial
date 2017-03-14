@@ -22,9 +22,16 @@ pwd
 
 # Run the application specific deploy steps for this project.
 
-echo " -----> Running Django database table migrations."
+if [ x"$DATABASE_URL" != x"" ];
+then
+    echo " -----> Running Django database table migrations."
 
-python manage.py migrate --noinput
+    python manage.py migrate --noinput
+else
+    DJANGO_ADMIN_USERNAME=admin \
+       DJANGO_ADMIN_EMAIL=admin@example.com \
+       DJANGO_ADMIN_PASSWORD=top-secret `dirname $0`/setup
+fi
 
 # Dump out the contents of the current working directory.
 

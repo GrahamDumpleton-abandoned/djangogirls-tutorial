@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo " -----> Initialising Django database."
+echo " -----> Running Django database table migrations."
 
 python manage.py migrate --noinput
 
