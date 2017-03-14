@@ -22,7 +22,7 @@ pwd
 
 # Run the application specific deploy steps for this project.
 
-echo " -----> Running database table migrations."
+echo " -----> Running Django database table migrations."
 
 python manage.py migrate --noinput
 

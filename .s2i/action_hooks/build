@@ -22,7 +22,7 @@ pwd
 
 # Run the application specific build steps for this project.
 
-echo " -----> Running collection of static resources."
+echo " -----> Running collection of Django static resources."
 
 python manage.py collectstatic --noinput
 
