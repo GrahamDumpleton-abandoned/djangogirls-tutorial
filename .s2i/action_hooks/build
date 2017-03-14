@@ -20,6 +20,10 @@ echo " -----> Current working directory."
 
 pwd
 
+# Run the application specific build actions for this project.
+
+python manage.py collectstatic
+
 # Dump out the contents of the current working directory.
 
 echo " -----> Contents of the current working directory after build run."
