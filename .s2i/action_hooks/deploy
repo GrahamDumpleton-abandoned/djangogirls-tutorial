@@ -20,6 +20,12 @@ echo " -----> Current working directory."
 
 pwd
 
+# Run the application specific deploy actions for this project.
+
+echo " -----> Running application specific deploy steps."
+
+python manage.py migrate --noinput
+
 # Dump out the contents of the current working directory.
 
 echo " -----> Contents of the current working directory after build run."
