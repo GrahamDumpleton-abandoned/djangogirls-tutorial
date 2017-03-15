@@ -1,3 +1,4 @@
 #!/bin/bash
 
-python manage.py runmodwsgi --port 8080
+exec python manage.py runmodwsgi --log-to-terminal --port 8080 \
+    --url-alias /media media

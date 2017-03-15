@@ -22,8 +22,7 @@ pwd
 
 # Run the application specific deploy steps for this project.
 
-if [ x"$DATABASE_URL" != x"" ];
-then
+if [ x"$DATABASE_URL" != x"" ]; then
     echo " -----> Running Django database table migrations."
 
     python manage.py migrate --noinput

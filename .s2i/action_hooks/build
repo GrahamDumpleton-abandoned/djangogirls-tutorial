@@ -26,6 +26,10 @@ echo " -----> Running collection of Django static resources."
 
 python manage.py collectstatic --noinput
 
+echo " -----> Creating directory for uploaded image files."
+
+mkdir -p media/images && chmod g+w media/images
+
 # Dump out the contents of the current working directory.
 
 echo " -----> Contents of the current working directory after build run."

@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
+import dj_database_url
+
 if os.environ.get('DATABASE_URL'):
-    DATABASES['default'] = dj_database_url.config(conn_max_age=600)
+    DATABASES = {
+        'default': dj_database_url.config(conn_max_age=600)
+    }
 
 else:
     DATABASES = {
@@ -126,6 +130,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
@@ -141,3 +148,5 @@ LOGGING = {
         },
     },
 }
+
+LOGIN_REDIRECT_URL = 'post_list'
