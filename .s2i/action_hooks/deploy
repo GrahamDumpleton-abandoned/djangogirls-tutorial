@@ -27,9 +27,9 @@ if [ x"$DATABASE_URL" != x"" ]; then
 
     python manage.py migrate --noinput
 else
-    DJANGO_ADMIN_USERNAME=admin \
-       DJANGO_ADMIN_EMAIL=admin@example.com \
-       DJANGO_ADMIN_PASSWORD=top-secret `dirname $0`/setup
+    DJANGO_ADMIN_USERNAME=developer \
+       DJANGO_ADMIN_EMAIL=developer@example.com \
+       DJANGO_ADMIN_PASSWORD=developer `dirname $0`/setup
 fi
 
 # Dump out the contents of the current working directory.
